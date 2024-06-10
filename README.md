@@ -2,20 +2,6 @@
 
 ## Склонируйте репозиторий
 
-Убедитесь, что на вашей ВМ установлено git-расширение [LFS](https://git-lfs.com/) для работы с большими файлами, попробовав вызвать его
-
-```
-git lfs version
-```
-
-Если команда выше не возвращает версию расширения, то установите его
-
-```
-git lfs install
-```
-
-Данное расширение необходимо для получения файлов с данными из репозитория.
-
 Склонируйте на свою ВМ начальный репоизиторий:
 
 ```
@@ -46,6 +32,20 @@ python3 -m venv env_recsys_start
 pip install -r requirements.txt
 ```
 
+### Скачайте файлы с данными
+
+Для начала работы понадобится два файла с данными:
+- [books.parquet](https://storage.yandexcloud.net/mle-data/goodsread/books.parquet)
+- [interactions.parquet](https://storage.yandexcloud.net/mle-data/goodsread/interactions.parquet)
+
+Скачайте их в директорию локального репозитория. Для удобства вы можете воспользоваться командой wget:
+
+```
+wget https://storage.yandexcloud.net/mle-data/goodsread/books.parquet
+
+wget https://storage.yandexcloud.net/mle-data/goodsread/interactions.parquet
+```
+
 ## Откройте шаблон ноутбука
 
 Запустите Jupyter Lab
@@ -57,3 +57,4 @@ jupyter lab --ip=0.0.0.0 --no-browser
 Откройте в нём файл `preprocessing.ipynb`. Это ноутбук, в котором предлагается провести предварительную подготовку данных.
 
 После выполнения подготовки данных, их сохранения, дальнейшую работу предлагается вести в ноутбуке `main_offline.ipynb`.
+
