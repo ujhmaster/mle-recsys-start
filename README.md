@@ -38,6 +38,13 @@ pip install -r requirements.txt
 - [books.parquet](https://storage.yandexcloud.net/mle-data/goodsread/books.parquet)
 - [interactions.parquet](https://storage.yandexcloud.net/mle-data/goodsread/interactions.parquet)
 
+Позже, вам понадобятся ещё файлы:
+
+- [candidates/inference/als_recommendations.parquet](https://storage.yandexcloud.net/mle-data/candidates/inference/als_recommendations.parquet)
+- [candidates/inference/content_recommendations.parquet](https://storage.yandexcloud.net/mle-data/candidates/inference/content_recommendations.parquet)
+- [candidates/training/als_recommendations.parquet](https://storage.yandexcloud.net/mle-data/candidates/training/als_recommendations.parquet)
+- [candidates/training/content_recommendations.parquet](https://storage.yandexcloud.net/mle-data/candidates/training/content_recommendations.parquet)
+
 Скачайте их в директорию локального репозитория. Для удобства вы можете воспользоваться командой wget:
 
 ```
@@ -45,6 +52,19 @@ wget https://storage.yandexcloud.net/mle-data/goodsread/books.parquet
 
 wget https://storage.yandexcloud.net/mle-data/goodsread/interactions.parquet
 ```
+
+и
+
+```
+mkdir -p candidates/inference
+wget https://storage.yandexcloud.net/mle-data/candidates/inference/als_recommendations.parquet -P candidates/inference
+wget https://storage.yandexcloud.net/mle-data/candidates/inference/content_recommendations.parquet -P candidates/inference
+
+mkdir -p candidates/training
+wget https://storage.yandexcloud.net/mle-data/candidates/training/als_recommendations.parquet -P candidates/training
+wget https://storage.yandexcloud.net/mle-data/candidates/training/content_recommendations.parquet -P candidates/training
+```
+
 
 ## Откройте шаблон ноутбука
 
