@@ -44,7 +44,8 @@ pip install -r requirements.txt
 - [candidates/inference/content_recommendations.parquet](https://storage.yandexcloud.net/mle-data/candidates/inference/content_recommendations.parquet)
 - [candidates/training/als_recommendations.parquet](https://storage.yandexcloud.net/mle-data/candidates/training/als_recommendations.parquet)
 - [candidates/training/content_recommendations.parquet](https://storage.yandexcloud.net/mle-data/candidates/training/content_recommendations.parquet)
-
+- [top_recs.parquet](https://storage.yandexcloud.net/mle-data/top_recs.parquet)
+ 
 Скачайте их в директорию локального репозитория. Для удобства вы можете воспользоваться командой wget:
 
 ```
@@ -63,6 +64,8 @@ wget https://storage.yandexcloud.net/mle-data/candidates/inference/content_recom
 mkdir -p candidates/training
 wget https://storage.yandexcloud.net/mle-data/candidates/training/als_recommendations.parquet -P candidates/training
 wget https://storage.yandexcloud.net/mle-data/candidates/training/content_recommendations.parquet -P candidates/training
+
+wget https://storage.yandexcloud.net/mle-data/top_recs.parquet
 ```
 
 
