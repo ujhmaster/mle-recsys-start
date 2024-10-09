@@ -5,6 +5,7 @@ __pycache__/
 
 .venv_recsys
 *.parquet
+*.par
 .env
 
 # C extensions
